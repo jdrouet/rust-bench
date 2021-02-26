@@ -1,0 +1,17 @@
+[package]
+name = "rust-bench"
+version = "0.1.0"
+authors = ["Jérémie Drouet <jeremie.drouet@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "for-each-vs-foor-loop"
+path = "benches/for-each-vs-foor-loop.rs"
+harness = false
