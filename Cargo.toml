@@ -10,8 +10,14 @@ edition = "2018"
 
 [dev-dependencies]
 criterion = "0.3"
+rand = "0.8"
 
 [[bench]]
 name = "for-each-vs-foor-loop"
 path = "benches/for-each-vs-foor-loop.rs"
+harness = false
+
+[[bench]]
+name = "vec-join-vs-string-push"
+path = "benches/vec-join-vs-string-push.rs"
 harness = false
