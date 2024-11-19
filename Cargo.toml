@@ -9,15 +9,25 @@ edition = "2018"
 [dependencies]
 
 [dev-dependencies]
-criterion = "0.3"
+criterion = "0.5"
 rand = "0.8"
 
-[[bench]]
-name = "for-each-vs-foor-loop"
-path = "benches/for-each-vs-foor-loop.rs"
-harness = false
+# [[bench]]
+# name = "for-each-vs-foor-loop"
+# path = "benches/for-each-vs-foor-loop.rs"
+# harness = false
 
 [[bench]]
-name = "vec-join-vs-string-push"
-path = "benches/vec-join-vs-string-push.rs"
+name = "iowrite-vs-fmtwrite"
+path = "benches/iowrite-vs-fmtwrite.rs"
 harness = false
+
+# [[bench]]
+# name = "vec-join-vs-string-push"
+# path = "benches/vec-join-vs-string-push.rs"
+# harness = false
+
+# [[bench]]
+# name = "write-and-replace-to-stdio"
+# path = "benches/write-and-replace-to-stdio.rs"
+# harness = false
