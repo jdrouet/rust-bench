@@ -10,7 +10,7 @@ edition = "2018"
 
 [dev-dependencies]
 criterion = "0.5"
-rand = "0.8"
+rand = "0.9"
 
 # [[bench]]
 # name = "for-each-vs-foor-loop"
